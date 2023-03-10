@@ -63,3 +63,31 @@ input:checked + .meme .meme-img {
 input:checked + .meme .icon {
   background-image: url(./imgs/xmark.svg);
 }
+@media screen and (min-width: 820px) {
+  body {
+    font-size: 2rem;
+  }
+  .container {
+    max-width: 500px;
+  }
+  .content {
+    transition: 0.3s linear;
+    color: blue;
+  }
+  .icon {
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  .content:hover {
+    color: black;
+  }
+  .content:hover .icon {
+    opacity: 1;
+  }
+  input:checked + .meme {
+    color: black;
+  }
+  .meme {
+    cursor: pointer;
+  }
+}
