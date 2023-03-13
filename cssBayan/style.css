@@ -98,4 +98,11 @@ input:checked + .meme .icon {
   .meme {
     cursor: pointer;
   }
+  .meme:hover .meme-img {
+    max-height: 1500px;
+    transform: scale(1);
+  }
+  .meme:hover .icon {
+    background-image: url(./imgs/xmark.svg);
+  }
 }
